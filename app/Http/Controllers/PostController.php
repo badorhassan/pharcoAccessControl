@@ -44,7 +44,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return Inertia::render('Show', [
-            'posts' => $post
+            'post' => $post
         ]);
     }
 

@@ -26,8 +26,8 @@ export default function Index({ posts }) {
                                 <td>{item.body}</td>
                                 <td>
                                     <button className="btn btn-danger" type="button" onClick={() => deletePost(item.id)}>Delete</button>
-                                    <Link href={`/post/${item.id}/edit`} className="btn btn-warning">Edit</Link>
-                                    <Link href={`/post/${item.id}`} className="btn btn-info">Show</Link>
+                                    <Link href={`/posts/${item.id}/edit`} className="btn btn-warning">Edit</Link>
+                                    <Link href={`/posts/${item.id}`} className="btn btn-info">Show</Link>
                                 </td>
                             </tr>
                         )) }
